@@ -1,0 +1,12 @@
+@import '../../../variables.scss';
+
+.navbar{
+    min-height: 15vh;
+    background-color: $ligthgreen;
+    margin-bottom: 3px;
+
+    &_burger {
+        cursor: pointer;
+        color: $green;
+    }
+}

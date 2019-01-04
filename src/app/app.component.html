@@ -1,20 +1,222 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<navbar></navbar>
 
+<section class="content">
+  <div class="fresh" fxLayout='column' fxLayout.gt-sm="row" fxFlexAlign="center" ngClass.sm=text>
+    <div class="item--info" fxFlex="100%" fxFlex.gt-sm="50%" fxLayoutAlign="center center">
+      <div fxLayout='column' fxFlex.gt-sm="80%" class="item--info__content">
+        <h2 class="item__title-banner"><strong>FRESH FOOD</strong> </h2>
+        <span class="item__subtitle-banner" style=" font-family: Great Vibes">Organic</span>
+        <p class="item__desc" fxFlex.gt-lg="60%">
+          How your food is grown or raised can have a major impact on your
+          mental and emotional health as well as the environment.
+        </p>
+        <div class="item__button">LEARN MORE</div>
+      </div>
+    </div>
+    <div class="img" fxFlex="100%" fxFlex.gt-sm="50%" style="width: 100%; height: 550px;"></div>
+  </div>
+
+  <div class="work" fxLayout='column' fxFlexAlign="center" style="width: 100%;  padding: 60px 10px;">
+    <div fxLayout='column' fxLayoutAlign="center center" class="content_work__title" style=" margin: auto; width: 80%; margin-bottom: 50px;">
+      <p fxFlex="100%" class="title_work">How It Works?</p>
+      <p fxFlexAlign="center" class="description" style="color: white; margin-bottom: 15px; padding: 0 35px;">
+        Organic agriculture, which is governed by strict government standards, requires that products bearing the
+        organic label
+        are produced without the use of toxic and persistent pesticides and synthetic nitrogen fertilizers,
+        antibiotics,
+        synthetic hormones, genetic engineering or other excluded practices, sewage sludge, or irradiation.
+      </p>
+    </div>
+    <div fxLayout='column' fxLayout.gt-xs="row grap" fxLayoutAlign="center center" ngClass.sm=text>
+      <div class="item--img"></div>
+      <div class="item--text" fxLayout='column' fxLayoutAlign="center center">
+        <img src="../assets/images/icon-vaca.png" width="50px">
+        <p class="item__title">Organic Farming</p>
+        <p class="item__desc">Organic farming practices reduce pollution, conserve water,
+          reduce soil erosion, increase soil fertility, and use less energy,
+          is also better for birds</p>
+      </div>
+      <div class="item--img"></div>
+      <div class="item--text" fxLayout='column' fxLayoutAlign="center center">
+        <img src="../assets/images/icon-hoja.png" width="50px">
+        <p class="item__title">Animal husbandry</p>
+        <p class="item__desc">The animal production system, may be broadly classified
+          as traditional, conventional and organic with their distinct characteristics.</p>
+      </div>
+      <div class="item--img"></div>
+      <div class="item--text" fxLayout='column' fxLayoutAlign="center center">
+        <img src="../assets/images/icon-tractor.png" width="50px">
+        <p class="item__title">Arable Farming</p>
+        <p class="item__desc">Organic foods often have more beneficial nutrients,
+          such as antioxidants, than their conventionally-grown counterparts and
+          people with allergies to foods</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="promise" fxLayout='column' fxLayout.gt-xs="row" fxFlexAlign="center" ngClass.sm=text>
+    <div class="img" fxFlex="100%" fxFlex.gt-sm="50%" style="width: 100%; height: 490px;"></div>
+    <div class="item--info" fxFlex="100%" fxFlex.gt-sm="50%" fxLayoutAlign="center center">
+      <div class="item--info__content" fxLayout='column' fxFlex.gt-sm="90%">
+        <p class="item__title-banner-2" fxLayout='row' fxFlexAlign="start"> ORGANIC FARM</p>
+        <span class="item__subtitle-banner-l">Our Promise</span>
+        <p class="item__desc" fxFlex.gt-lg="60%">
+          We bring the season’s best mix of organic produce and hand-crafted farm products conveniently to your door by
+          growing
+          and partnering with local farms and artisans in your area.
+        </p>
+        <div class="item__button-orange"> LEARN MORE</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="healt" fxLayout='column' fxLayout.gt-xs="row" fxFlexAlign="center" ngClass.sm=text>
+    <div fxFlex="100%" fxFlex.gt-sm="50%" fxLayoutAlign="center center" class="item--info">
+      <div fxLayout='column' fxFlex.gt-sm="90%" class="item--info__content">
+        <p fxLayout='row' fxFlexAlign="center" class="item__title-banner-2">HEALT BENEFITS </p>
+        <span class="item__subtitle-banner-3">Of Organic Food</span>
+        <p class="item__desc" fxFlex.gt-lg="60%">
+          We bring the season’s best mix of organic produce and hand-crafted farm products conveniently to your door by
+          growing
+          and partnering with local farms and artisans in your area.
+        </p>
+        <div class="item__button-orange"> LEARN MORE</div>
+      </div>
+    </div>
+    <div class="healt_img" fxFlex="100%" fxFlex.gt-sm="50%" style=" width: 100%; height: 490px;">
+    </div>
+  </div>
+  <div class="about">
+    <div class="content--about__title" fxLayout='column' fxLayoutAlign="center center" style=" margin: auto; width: 80%; margin-bottom: 50px;"
+      ngClass.sm=text>
+      <p class="title_work ">About Our Farm</p>
+      <p class="description " style="color:white; margin-bottom: 30px; padding: 0 35px;">
+        Today, at our second-generation family farm, we keep with our parents’
+        vision by practicing healthy crop rotation, encouraging a diverse
+        ecosystem around the fields, efficiently using local water sources and
+        carefully selecting produce varieties that grow well and taste great.
+      </p>
+    </div>
+    <div fxLayout='column' fxLayout.gt-xs="row grap" fxLayoutAlign="center center" ngClass.sm=text>
+
+      <div class="card" fxLayout='row' fxFlexAlign="center" ngClass.sm=text>
+        <div fxLayout='column' fxLayoutAlign="center center">
+          <div class="item--card">
+            <p class="item__title-banner-2">VEGETABLES</p>
+            <p class="item__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+          </div>
+        </div>
+      </div>
+      <div class="card" fxLayout='row' fxFlexAlign="center" ngClass.sm=text>
+        <div class="space" fxLayout='column' fxLayoutAlign="center center">
+          <div class="item--card">
+            <p class="item__title-banner-2">HOW IT WORKS</p>
+            <p class="item__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+          </div>
+        </div>
+      </div>
+      <div class="card" fxLayout='row' fxFlexAlign="center" ngClass.sm=text>
+        <div class="space" fxLayout='column' fxLayoutAlign="center center">
+          <div class="item--card">
+            <p class="item__title-banner-2">FLEXIBILITY</p>
+            <p class="item__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+          </div>
+        </div>
+      </div>
+      <div class="card" fxLayout='row' fxFlexAlign="center" ngClass.sm=text>
+        <div class="space" fxLayout='column' fxLayoutAlign="center center">
+          <div class="item--card">
+            <p class="item__title-banner-2">FARM PRODUCTS</p>
+            <p class="item__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+          </div>
+        </div>
+      </div>
+      <div class="card" fxLayout='row' fxFlexAlign="center" ngClass.sm=text>
+        <div class="space" fxLayout='column' fxLayoutAlign="center center">
+
+          <div class="grid-4"></div>
+        </div>
+      </div>
+      <div class="card" fxLayout='row' fxFlexAlign="center" ngClass.sm=text>
+        <div class="space" fxLayout='column' fxLayoutAlign="center center">
+
+          <div class="grid-5"></div>
+        </div>
+      </div>
+      <div class="card" fxLayout='row' fxFlexAlign="center" ngClass.sm=text>
+        <div class="space" fxLayout='column' fxLayoutAlign="center center">
+
+          <div class="grid-6"></div>
+        </div>
+      </div>
+      <div class="card" fxLayout='row' fxFlexAlign="center" ngClass.sm=text>
+        <div class="space" fxLayout='column' fxLayoutAlign="center center">
+
+          <div class="grid-7"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="happy" fxLayout='column' fxLayout.gt-xs="row" fxFlexAlign="center" ngClass.sm=text>
+    <div class="happy_img" fxFlex="100%" fxFlex.gt-sm="50%" style="width: 100%; height: 490px;"></div>
+    <div class="item--info" fxFlex="100%" fxFlex.gt-sm="50%" fxLayoutAlign="center center">
+      <div class="item--info__content" fxLayout='column' fxFlex.gt-sm="90%">
+        <p class="item__title-banner-2" fxLayout='row' fxFlexAlign="center">HAPPY FARMING</p>
+        <span class="item__subtitle-banner-3">Happy Animals</span>
+        <p class="item__desc" fxFlex.gt-lg="60%">
+          The idea that happier farm animals produce higher quality food is not new, and it seems to be catching on.
+          Several
+          small scale egg farmers have transitioned to a “pastured” system, allowing their chickens to roam freely to
+          eat grass
+          and bugs the way nature intended. These chickens are not simply “free range” or “cage free,” which are terms
+          that
+          unfortunately don’t have much meaning in today’s food market
+        </p>
+        <div class="item__button-orange"> LEARN MORE</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content--card" fxLayout='column' fxLayout.gt-xs="row grap" fxLayoutAlign="center center" ngClass.sm=text>
+
+    <div class="card" fxLayout='row' fxFlexAlign="center" ngClass.sm=text>
+      <div class="card__info" fxLayout='column' fxLayoutAlign="center center">
+        <img src="../assets/images/types-1.jpeg">
+        <p class="card__info_title">Fresh Fruits</p>
+        <p class="title_text">The secret is using fresh, seasonal produce in combination
+          with good quality oils, vinegars or dairy. We choose the
+          organic lifestyle because.</p>
+      </div>
+    </div>
+    <div class="card" fxLayout='row' fxFlexAlign="center" ngClass.sm=text>
+      <div class="card__info" fxLayout='column' fxLayoutAlign="center center">
+        <img src="../assets/images/types-2.jpeg">
+        <p class="card__info_title">Vegetables</p>
+        <p class="title_text">We have all been listening to our mothers saying:
+          eat your vegetables. Scientists also agree: we need to eat 5
+          portions of vegetables to stay healthy.</p>
+      </div>
+    </div>
+    <div class="card" fxLayout='row' fxFlexAlign="center" ngClass.sm=text>
+      <div class="card__info" fxLayout='column' fxLayoutAlign="center center">
+        <img src="../assets/images/types-3.jpeg">
+        <p class="card__info_title">Salad Leaves</p>
+        <p class="title_text">One way to motivate yourself to eat more salad this summer is to have a tasty, homemade
+          dressing drizzled on top.
+          Organic food popularity.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="healt" fxLayout='column' fxLayout.gt-xs="row" fxFlexAlign="center" ngClass.sm=text>
+    <div fxFlex="100%" fxFlex.gt-sm="50%" style="width: 100%; height: 490px;">
+      <agm-map [latitude]="lat" [longitude]="lng">
+        <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+      </agm-map>
+    </div>
+    <div class="content--maps_img" fxFlex="100%" fxFlex.gt-sm="50%" style=" width: 100%; height: 490px;">
+    </div>
+  </div>
+</section>
+<app-footer></app-footer>

@@ -1,0 +1,266 @@
+@import '../variables.scss';
+
+.content {
+  .fresh {
+    background-color: $ligthgreen;
+
+    .img {
+      background-position: center center;
+      background-size: cover;
+      background-image: url("../assets/images/banner.jpeg");
+    }
+  }
+
+  .work {
+    background-color: $green;
+
+    .description {
+      text-align: center;
+    }
+  }
+
+  .promise {
+    background-color: rgb(247, 247, 247);
+
+    .img {
+      background-position: center center;
+      background-size: cover;
+      background-image: url("../assets/images/banner-2.jpeg");
+    }
+  }
+
+  .healt {
+    &_img {
+      background-position: center center;
+      background-size: cover;
+      background-image: url("../assets/images/banner-3.jpeg");
+    }
+
+  }
+
+  .about {
+    width: 100%;
+    background-color: $green;
+    padding: 60px 10px;
+
+    .description {
+      text-align: center;
+    }
+  }
+
+  .happy {
+    &_img {
+
+      background-position: center center;
+      background-size: cover;
+      background-image: url("../assets/images/banner-4.jpeg");
+    }
+  }
+
+  &--card {
+    width: 100%;
+    background-color: $ligthgreen;
+    padding: 0;
+  }
+
+  &--maps {
+    &_img {
+      height: 100%;
+      width: 100%;
+      min-height: 450px;
+      background-position: center center;
+      background-size: cover;
+      background-image: url("../assets/images/banner-5.jpeg");
+    }
+  }
+
+}
+
+
+.card {
+  margin: 0 35px;
+
+  &__info {
+    margin: 15px 0;
+    width: 250px;
+    padding: 20px;
+    background-color: $white;
+
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 150px;
+    }
+
+    &_title {
+      padding: 15px 0;
+      font-size: 1.25rem;
+      font-family: $text;
+    }
+  }
+}
+
+.title {
+  &_work {
+    font-size: 2.5em;
+    color: white;
+  }
+}
+
+.item {
+
+  &__title-banner {
+    position: absolute;
+    left: 105px;
+    font-size: 1.15em;
+    color: $green;
+
+    &-2 {
+      font-size: 1.15em;
+      color: $green;
+      padding: 0 5px;
+    }
+  }
+
+  &__subtitle-banner {
+    font-family: $title;
+    color: $tomato;
+    font-size: 4em;
+    position: relative;
+
+    &-l {
+      font-family: $title;
+      color: $tomato;
+      font-size: 3em;
+    }
+
+    &-3 {
+      font-family: $title;
+      color: $tomato;
+      font-size: 2.5em;
+    }
+  }
+
+  &__button {
+    width: 80px;
+    margin: 25px 0;
+    padding: 12px 20px;
+    font-size: 12px;
+    color: #ffffff;
+    border-radius: 20px;
+    background-color: $green;
+
+    &-orange {
+      width: 80px;
+      margin: 25px 0;
+      padding: 12px 20px;
+      font-size: 12px;
+      color: #ffffff;
+      border-radius: 20px;
+      background-color: $tomato;
+
+    }
+
+  }
+
+  &--text,
+  &--img {
+    width: 300px;
+    height: 290px;
+    margin: 15px;
+  }
+
+  &--text {
+    background-color: #fff;
+
+    img {
+      margin-top: 20px;
+    }
+  }
+
+  &__title {
+    font-size: 1.3em;
+  }
+
+  &__desc {
+    margin-top: 15px;
+    font-style: italic;
+    padding: 0 5px;
+  }
+
+  &--img {
+    background-position: center center;
+    background-size: cover;
+
+    &:nth-child(1) {
+      background-image: url(../assets/images/borrego.jpeg);
+    }
+
+    &:nth-child(3) {
+      background-image: url(../assets/images/fresas.jpeg);
+    }
+
+    &:nth-child(5) {
+      background-image: url(../assets/images/verduras.jpeg);
+    }
+  }
+
+  &--card,
+  &--img2 {
+    width: 300px;
+    height: 200px;
+  }
+
+  &--card {
+    padding: 20px 0;
+    height: 130px;
+    background-color: #fff;
+  }
+
+  &--img2 {
+    background-position: center center;
+    background-size: cover;
+  }
+}
+
+.grid-4 {
+  width: 300px;
+  height: 290px;
+  background-image: url(../assets/images/grid-4.jpeg);
+  background-position: center center;
+  background-size: cover;
+}
+
+.grid-5 {
+  width: 300px;
+  height: 290px;
+  background-image: url(../assets/images/grid-5.jpeg);
+  background-position: center center;
+  background-size: cover;
+}
+
+.grid-6 {
+  width: 300px;
+  height: 290px;
+  background-image: url(../assets/images/grid-6.jpeg);
+  background-position: center center;
+  background-size: cover;
+}
+
+.grid-7 {
+  width: 300px;
+  height: 290px;
+  background-image: url(../assets/images/grid-7.jpeg);
+  background-position: center center;
+  background-size: cover;
+}
+.space{
+    margin: 15px 0;
+    width: 250px;
+    padding: 20px;
+}
+
+agm-map {
+  height: 100%;
+}
+
